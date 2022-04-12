@@ -6982,7 +6982,7 @@ L.Map.addInitHook('addHandler', 'doubleClickZoom', L.Map.DoubleClickZoom);
  */
 
 L.Map.mergeOptions({
-	scrollWheelZoom: true
+	scrollWheelZoom: false
 });
 
 L.Map.ScrollWheelZoom = L.Handler.extend({

@@ -76,7 +76,8 @@ function preventUnintendedZoomOnScroll(map) {
   });
   $(document).on("mousedown", ".leaflet", function(e) {
     // Clicking always enables zooming.
-    map.scrollWheelZoom.enable();
+    //map.scrollWheelZoom.enable();
+     map.scrollWheelZoom.disable();
     lastScreen = {x: null, y: null};
   });
 }

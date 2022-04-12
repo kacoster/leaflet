@@ -595,7 +595,8 @@ function preventUnintendedZoomOnScroll(map) {
     // Did the mouse really move?
     if (lastScreen.x !== null && e.screenX !== lastScreen.x || e.screenY !== lastScreen.y) {
       // It really moved. Enable zooming.
-      map.scrollWheelZoom.enable();
+      // map.scrollWheelZoom.enable();
+      map.scrollWheelZoom.disable();
       lastScreen = {
         x: null,
         y: null
@@ -604,7 +605,8 @@ function preventUnintendedZoomOnScroll(map) {
   });
   (0, _jquery2["default"])(document).on("mousedown", ".leaflet", function (e) {
     // Clicking always enables zooming.
-    map.scrollWheelZoom.enable();
+    // map.scrollWheelZoom.enable();
+     map.scrollWheelZoom.disable();
     lastScreen = {
       x: null,
       y: null
